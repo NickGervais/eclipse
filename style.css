@@ -2,13 +2,24 @@ body {
     margin: 0px;
     background: lightblue;
 }
-.space {
+#space {
     height: 100vh;
     width: 100%;
     position: absolute;
     background: black;
     opacity: 0px;
     animation: darken 10s linear infinite;
+    overflow: hidden;
+}
+.star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    background: white;
+    box-shadow: 0 0 15px white;
 }
 .container {
     height: 100vh;
@@ -61,7 +72,7 @@ body {
 
 @keyframes orbit {
     0% {
-        transform: rotate(-20deg) translateY(-50%);
+        transform: rotate(0deg) translateY(-50%);
         opacity: 0;
     }
     10% {
@@ -93,7 +104,7 @@ body {
         opacity: .1;
     }
     100% {
-        transform: rotate(340deg) translateY(-50%);
+        transform: rotate(360deg) translateY(-50%);
         opacity: 0;
     }
 }
@@ -128,7 +139,7 @@ body {
 } 
 @keyframes darken {
     0% {
-        opacity: 0.1;
+        opacity: 0;
     }
     10% {
         opacity: .7;
@@ -146,7 +157,7 @@ body {
         opacity: .7;
     }
     80% {
-        opacity: 0.1;
+        opacity: 0;
     }
     100% {
         opacity: 0;
