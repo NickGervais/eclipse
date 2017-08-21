@@ -41,13 +41,14 @@ body {
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 0 2px white; 
+    overflow: visible;
     animation: carona 10s linear infinite; 
 }
 .wrapper::after {
     content: '';
     display: block;
-    height: 399px;
-    width: 399px;
+    height: 400px;
+    width: 400px;
     background: black;
     border-radius: 50%;
     position: absolute;
@@ -107,10 +108,10 @@ body {
         box-shadow: 0 0 5px white;
     }
     38% {
-        box-shadow: 0 0 300px white;
+        box-shadow: 0 0 200px white;
     }
     42% {
-        box-shadow: 0 0 300px white;
+        box-shadow: 0 0 200px white;
     }    
     50% {
         box-shadow: 0 0 5px white;
@@ -130,13 +131,19 @@ body {
         opacity: 0.1;
     }
     10% {
+        opacity: .7;
+    }
+    30% {
         opacity: .9;
     }
     40% {
         opacity: 1;
     }
-    70% {
+    50% {
         opacity: .9;
+    }
+    70% {
+        opacity: .7;
     }
     80% {
         opacity: 0.1;
