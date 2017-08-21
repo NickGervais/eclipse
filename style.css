@@ -40,8 +40,8 @@ body {
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-
-    /* animation: carona 10s linear infinite; */
+    box-shadow: 0 0 2px white; 
+    animation: carona 10s linear infinite; 
 }
 .wrapper::after {
     content: '';
@@ -67,9 +67,21 @@ body {
         transform: rotate(45deg) translateY(-50%);
         opacity: 1;
     }
-    40% {
+    30% {
+        transform: rotate(89deg) translateY(-50%);
+        opacity: 1;
+    }
+    38% {
         transform: rotate(90deg) translateY(-50%);
         opacity: 1;
+    }
+    42% {
+        transform: rotate(90deg) translateY(-50%);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(91deg) translateY(-50%);
+        opacity: 1;  
     }
     70% {
         transform: rotate(135deg) translateY(-50%);
@@ -86,22 +98,31 @@ body {
 }
  @keyframes carona {
     0% {
-        box-shadow: 0 0 2px white;
+        box-shadow: 0 0 5px white;
     }
     10% {
-        box-shadow: 0 0 5px gold;
+        box-shadow: 0 0 5px white;
     }
-    40% {
-        box-shadow: 0 0 40px gold;
+    30% {
+        box-shadow: 0 0 5px white;
+    }
+    38% {
+        box-shadow: 0 0 300px white;
+    }
+    42% {
+        box-shadow: 0 0 300px white;
+    }    
+    50% {
+        box-shadow: 0 0 5px white;
     }
     70% {
-        box-shadow: 0 0 5px gold;
+        box-shadow: 0 0 5px white;
     }
     80% {
-        box-shadow: 0 0 2px gold;
+        box-shadow: 0 0 5px white;
     }
     100% {
-        box-shadow: 0 0 2px gold;
+        box-shadow: 0 0 5px white;
     }
 } 
 @keyframes darken {
