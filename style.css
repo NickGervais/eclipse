@@ -42,7 +42,7 @@ body {
     transform: translateX(-50%);
     box-shadow: 0 0 2px white; 
     overflow: visible;
-    animation: carona 10s linear infinite; 
+    animation: corona 10s linear infinite; 
 }
 .wrapper::after {
     content: '';
@@ -97,7 +97,7 @@ body {
         opacity: 0;
     }
 }
- @keyframes carona {
+ @keyframes corona {
     0% {
         box-shadow: 0 0 5px white;
     }
@@ -108,10 +108,10 @@ body {
         box-shadow: 0 0 5px white;
     }
     38% {
-        box-shadow: 0 0 200px white;
+        box-shadow: 0 0 160px white;
     }
     42% {
-        box-shadow: 0 0 200px white;
+        box-shadow: 0 0 160px white;
     }    
     50% {
         box-shadow: 0 0 5px white;
